@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        max-width: 980px;
+        font-family: sans-serif;
+    }
+    header , .sec-1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1F2937;
+        color: white;
+        padding-bottom: 70px;
+        gap: 40px;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        gap: 10px;
+        font-size: small;
+    }
+    header a{
+        text-decoration: none;
+        color: white;
+    }
+    .img-placeholder{
+        width: 700px;
+        height: 200px;
+        background: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <header>
+        <div><h5>Header Logo</h5></div>
+        <ul>
+            <li><a href="#">header link one</a></li>
+            <li><a href="#">header link two</a></li>
+            <li><a href="#">header link three</a></li>
+        </ul>
+    </header>
+
+    <div class="sec-1">
+        <div>
+            <h1>This website is awesome!!</h1>
+            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+            <a href="#">Sign up</a>
+        </div>
+        <div class="img-placeholder"><p>this is a placeholder for an image</p></div>
+    </div>
+</body>
+</html>
