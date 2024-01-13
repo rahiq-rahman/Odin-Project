@@ -11,6 +11,7 @@
         padding: 0;
         font-family: sans-serif;
     }
+    /*sec-1 header*/
     header , .sec-1{
         display: flex;
         align-items: center;
@@ -20,10 +21,7 @@
         gap: 40px;
         margin: 0 20%;
     }
-    .text h1{
-        font-weight: 800;
-        margin-bottom: -10px;
-    }
+
     ul{
         display: flex;
         list-style-type: none;
@@ -31,6 +29,7 @@
         gap: 10px;
         font-size: small;
     }
+
     header a{
         text-decoration: none;
         color: white;
@@ -38,9 +37,11 @@
         display: flex;
         flex-direction: column;
     }
+    
     header a:hover{
-        color: rgb(255, 139, 6);
+        color: rgb(255, 189, 114);
     }
+
     header a:after{
         content:"";
         width: 0%;
@@ -48,13 +49,21 @@
         transition: all .5s ease-in-out;
 
     }
+
     header a:hover:after{
         width: 100%;
-        border: 1px solid rgba(255, 139, 6, 0.84);
+        border: 1px solid rgb(255, 189, 114);
     }
+
+    .text h1{
+        font-weight: 800;
+        margin-bottom: -10px;
+    }
+
     .sec-1 .text{
         width: 400px;
     }
+
     .img-placeholder{
         width: 420px;
         height: 200px;
@@ -64,19 +73,41 @@
         align-items: center;
         border-radius: 2px;
     }
+
+    .sec-1 .sign-btn{
+        color: #1F2937;
+        background-color: white;
+        padding: 5px 25px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: all .5s ease-in-out;
+        border: 1px solid white;
+    }
+
+    .sec-1 .sign-btn:hover{
+        background-color: #1F2937;
+        color: white;
+        border: 1px solid white;
+    }
+    /*sec-1 header*/
+
+    /*sec-2*/
     .sec-2{
         padding-bottom: 70px;
         margin: 0 20%;
-
     }
+
     .sec-2 h2{
         color: #1F2937;
         text-align: center;
     }
+
     .sec-2 p{
         font-weight: 600;
         font-size: small;
     }
+
     .sec-2-container{
         display: flex;
         justify-content: space-evenly;
@@ -91,6 +122,9 @@
         border-radius: 8px;
         margin-bottom: 15px;
     }
+    /*sec-2*/
+
+    /*quotes*/
     .quotes{
         height: 300px;
         display: flex;
@@ -98,23 +132,29 @@
         justify-content: center;
         margin: 0 25%;
     }
+
     .quotes h3{
         line-height: 1.5;
         font-style: italic;
         color: #1F2937;
         font-weight: lighter;
     }
+
     .author{
         display: flex;
         justify-content: flex-end;
         color: #1F2937;
     }
+    /*quotes*/
+
+    /*signup*/
     .sign-up{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 200px;
     }
+
     .sign-up .container{
         background: #203d68ce;
         border-radius: 6px;
@@ -124,35 +164,13 @@
         width: 700px;
         padding: 30px 60px;
     }
+
     .sign-up .container h4 ,.sign-up .container p{
         padding: 0;
         margin: 0;
         color: white;
     }
-    footer{
-        color: white;
-        background: #1F2937;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-    }
-    .sec-1 .sign-btn{
-        color: #1F2937;
-        background-color: white;
-        padding: 5px 25px;
-        text-decoration: none;
-        border-radius: 4px;
-        font-weight: bold;
-        transition: all .5s ease-in-out;
-        border: 1px solid white;
-    }
-    .sec-1 .sign-btn:hover{
-        background-color: rgba(128, 128, 128, 0.342);
-        color: white;
-        border: 1px solid white;
-    }
+
     .sign-up .sign-btn{
         background-color: #1F2937;
         color: white;
@@ -162,11 +180,25 @@
         font-weight: bold;
         transition: all .5s ease-in-out;
     }
+
     .sign-up .sign-btn:hover{
         background-color: white;
         color: #203d68ce
-        
     }
+    /*signup*/
+
+    /*footer*/
+    footer{
+        color: white;
+        background: #1F2937;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+    }
+    /*footer*/
+
     @media screen and (max-width:768px){
         .sec-1 , .sec-2 , header , .quotes , .container , .sec-2-container{
             flex-wrap: wrap;
@@ -176,26 +208,25 @@
     }
 </style>
 <body>
+    
     <div style="background-color: #1F2937;">
+        <header>
+            <div><h5>Header Logo</h5></div>
+            <ul>
+                <li><a href="#">header link one</a></li>
+                <li><a href="#">header link two</a></li>
+                <li><a href="#">header link three</a></li>
+            </ul>
+        </header>
 
-    <header>
-        <div><h5>Header Logo</h5></div>
-        <ul>
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
-        </ul>
-    </header>
-
-    <div class="sec-1">
-        <div class="text">
-            <h1>This website is awesome!!</h1>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-            <a href="#" class="sign-btn">Sign up</a>
+        <div class="sec-1">
+            <div class="text">
+                <h1>This website is awesome!!</h1>
+                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                <a href="#" class="sign-btn">Sign up</a>
+            </div>
+            <div class="img-placeholder"><p>this is a placeholder for an image</p></div>
         </div>
-        <div class="img-placeholder"><p>this is a placeholder for an image</p></div>
-    </div>
-
     </div>
 
     <div class="sec-2">
@@ -220,9 +251,7 @@
         </div>
     </div>
 
-    <div style="background-color: rgba(128, 128, 128, 0.342);
-    ;">
-
+    <div style="background-color: rgba(128, 128, 128, 0.342);">
         <div class="quotes">
             <h3>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</h3>
             <div class="author"><h5>-Thor, God of Thunder</h5></div>
