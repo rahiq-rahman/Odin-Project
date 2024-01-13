@@ -70,6 +70,7 @@
         background: gray;
         display: flex;
         justify-content: center;
+        text-align: center;
         align-items: center;
         border-radius: 2px;
     }
@@ -200,10 +201,13 @@
     /*footer*/
 
     @media screen and (max-width:768px){
-        .sec-1 , .sec-2 , header , .quotes , .container , .sec-2-container{
+        header , .sec-2 , .quotes , .container , .sec-2-container{
             flex-wrap: wrap;
             gap: 10px;
             height: auto;
+        }
+        .sec-1{
+            flex-wrap: wrap-reverse;
         }
     }
 </style>
