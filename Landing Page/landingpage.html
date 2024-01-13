@@ -40,6 +40,43 @@
         justify-content: center;
         align-items: center;
     }
+    .sec-2{
+        padding-bottom: 70px;
+    }
+    .sec-2 h2{
+        color: #1F2937;
+        text-align: center;
+    }
+    .sec-2-container{
+        display: flex;
+        justify-content: space-evenly;
+    } 
+    .sec-2 .box{
+        width: 150px;
+        text-align: center;
+    }
+    .sec-2 .rec{
+        height: 150px;
+        border: 2px solid darkcyan;
+        border-radius: 8px;
+    }
+    .quotes{
+        height: 300px;
+        background-color: rgba(128, 128, 128, 0.342);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .quotes h3{
+        font-style: italic;
+        color: #1F2937;
+        font-weight: lighter;
+    }
+    .author{
+        display: flex;
+        justify-content: flex-end;
+        color: #1F2937;
+    }
 </style>
 <body>
     <header>
@@ -58,6 +95,33 @@
             <a href="#">Sign up</a>
         </div>
         <div class="img-placeholder"><p>this is a placeholder for an image</p></div>
+    </div>
+
+    <div class="sec-2">
+        <h2>Some random information</h2>
+        <div class="sec-2-container">
+            <div class="box">
+                <div class="rec"></div>
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="box">
+                <div class="rec"></div>
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="box">
+                <div class="rec"></div>
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+            <div class="box">
+                <div class="rec"></div>
+                <p>this is some subtext under an illustration or image</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quotes">
+        <h3>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</h3>
+        <div class="author"><h5>-Thor, God of Thunder</h5></div>
     </div>
 </body>
 </html>
