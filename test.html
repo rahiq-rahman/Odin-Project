@@ -2,14 +2,21 @@
 <html>
 <body>
 
-<h2>JavaScript Arithmetic</h2>
-<p>A typical arithmetic operation takes two numbers and produces a new number.</p>
-
-<p id="demo"></p>
+    <button>Press me</button>
+    <div id="greeting"></div>
+    
 
 <script>
-let x = 100 + 50;
-document.getElementById("demo").innerHTML = x;
+const button = document.querySelector("button");
+
+function greet() {
+  const name = prompt("What is your name?");
+  const greeting = document.querySelector("#greeting");
+  greeting.textContent = `Hello ${name}, nice to see you!`;
+}
+
+button.addEventListener("click", greet);
+
 </script>
 
 </body>
