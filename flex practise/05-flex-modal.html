@@ -4,83 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal</title>
+
+    <!--css links-->
+    <link rel="stylesheet" href="css/05-flex-modal.css">
 </head>
-<style>
-    body{
-        background: rgba(208, 22, 22, 0.451);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90vh;
-    }
-    .modal{
-        display: flex;
-        width: 450px;
-        background: white;
-        border-radius: 6px;
-        padding: 15px;
-        gap: 10px;
-    }
-    .exclamation{
-        flex-shrink: 0;
-        width: 25px;
-        height: 25px;
-        border-radius: 30%;
-        background: rgba(0, 139, 139, 0.378);
-        color: rgb(211, 51, 86);
-        font-weight: bold;
-        font-size: large;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .modal-heading{
-        display: flex;
-        justify-content: space-between;
-    }
-    .cross{
-        background: #eee;
-        border-radius: 50%;
-        color: rgb(211, 51, 86);
-        font-weight: 400;
-        font-size: 16px;
-        height: 24px;
-        width: 24px;
-        border: 1px solid #eee;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    h2{
-        margin: 0;
-    }
-    a{
-        text-decoration: none;
-        padding: 5px 15px;
-        color: white;
-        background: rgb(139, 0, 58);
-        border-radius: 6px;
-        font-weight: bold;
-        transition: all .3s ease-in;
-        border: 1px solid rgb(139, 0, 58);
-    }
-    a:hover{
-        background: white;
-        color: rgb(139, 0, 58);
-        border: 1px solid rgb(139, 0, 58);
-    }
-    .cancel{   
-        background: white;
-        color: rgb(139, 0, 58);
-        border: 1px solid rgb(139, 0, 58);
-    }
-    .cancel:hover{       
-        color: white;
-        background: rgba(0, 139, 139, 0.378);
-        border: 1px solid rgb(0, 139, 139);
-    }
-</style>
 <body>
     <div class="modal">
         <div class="exclamation">!</div>

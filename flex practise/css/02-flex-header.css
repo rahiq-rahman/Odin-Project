@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: aquamarine;
+    border-radius: 4px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 5px 10px;
+    margin: 0px 5px;
+    font-weight: bold;
+    color: blue;
+    background: white;
+    border-radius: 4px;
+}
+h3{
+    padding: 5px 10px;
+    font-weight: bold;
+    color: red;
+    background: white;
+    border-radius: 4px;
+}

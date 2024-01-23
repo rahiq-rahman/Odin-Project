@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*sec-1 header*/
+header , .sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 70px;
+    gap: 40px;
+    margin: 0 20%;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    font-size: small;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+header a:hover{
+    color: rgb(255, 189, 114);
+}
+
+header a:after{
+    content:"";
+    width: 0%;
+    border: 1px solid #1F2937;
+    transition: all .5s ease-in-out;
+
+}
+
+header a:hover:after{
+    width: 100%;
+    border: 1px solid rgb(255, 189, 114);
+}
+
+.text h1{
+    font-weight: 800;
+    margin-bottom: -10px;
+}
+
+.sec-1 .text{
+    width: 400px;
+}
+
+.img-placeholder{
+    width: 420px;
+    height: 200px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.sec-1 .sign-btn{
+    color: #1F2937;
+    background-color: white;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    border: 1px solid white;
+}
+
+.sec-1 .sign-btn:hover{
+    background-color: #1F2937;
+    color: white;
+    border: 1px solid white;
+}
+/*sec-1 header*/
+
+/*sec-2*/
+.sec-2{
+    padding-bottom: 70px;
+    margin: 0 20%;
+}
+
+.sec-2 h2{
+    color: #1F2937;
+    text-align: center;
+}
+
+.sec-2 p{
+    font-weight: 600;
+    font-size: small;
+}
+
+.sec-2-container{
+    display: flex;
+    justify-content: space-evenly;
+} 
+.sec-2 .box{
+    width: 150px;
+    text-align: center;
+}
+.sec-2 .rec{
+    height: 150px;
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+/*sec-2*/
+
+/*quotes*/
+.quotes{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 25%;
+}
+
+.quotes h3{
+    line-height: 1.5;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    color: #1F2937;
+}
+/*quotes*/
+
+/*signup*/
+.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.sign-up .container{
+    background: #203d68ce;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    padding: 30px 60px;
+}
+
+.sign-up .container h4 ,.sign-up .container p{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.sign-up .sign-btn{
+    background-color: #1F2937;
+    color: white;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.sign-up .sign-btn:hover{
+    background-color: white;
+    color: #203d68ce
+}
+/*signup*/
+
+/*footer*/
+footer{
+    color: white;
+    background: #1F2937;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+/*footer*/
+
+@media screen and (max-width:768px){
+    header , .sec-2 , .quotes  , .sec-2-container{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+        margin: 0px 10%;
+    }
+    .container{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+    .sec-1{
+        flex-wrap: wrap-reverse;
+        margin: 0px 10%;
+    }
+}

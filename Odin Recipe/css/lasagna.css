@@ -1,0 +1,8 @@
+body{
+    background: #cc741c97;
+}
+h1 , h2 , h3 , img , p{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}

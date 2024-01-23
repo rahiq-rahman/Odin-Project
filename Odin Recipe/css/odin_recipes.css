@@ -1,0 +1,13 @@
+body{
+    margin: auto;
+    background: #dda15e;
+    font-family: monospace;
+}
+h1 , a , li{
+    text-decoration: none;
+    color: #fefae0;
+    font-weight: bold;
+}
+h1{
+    margin-left: 30px;
+}
