@@ -1,4 +1,4 @@
-// const play = playGame();
+const play = playGame();
 
 function playGame(){
     let countWins = 0;
