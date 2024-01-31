@@ -11,6 +11,7 @@ function playGame(){
         playerChoice = playerChoice.toLowerCase();
 
         const computerChoice = getComputerChoice();
+        console.log("The computer choose "+ computerChoice);
 
         const result = playRound(playerChoice,computerChoice);
 
@@ -36,7 +37,7 @@ function getComputerChoice(){
         choice = "paper";
     }
     else 
-    choice = "scissor";
+        choice = "scissor";
 
     return choice;
 }
