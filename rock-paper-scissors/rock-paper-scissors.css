@@ -13,7 +13,8 @@ div{
 }
 h1{
     margin: 20px auto;
-    font-family: cursive;
+    font-family: fantasy;
+    font-weight: lighter;
     text-align: center;
 }
 img{
