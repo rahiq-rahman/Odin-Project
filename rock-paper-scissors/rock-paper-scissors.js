@@ -25,17 +25,17 @@ function playRound(playerSelection, computerSelection){
     if (player == computer){
         playerChose.innerHTML = player;
         compChose.innerHTML = computer;
-        result.innerHTML = "Draw";
+        result.innerHTML = "It's a draw";
     }
     else if (player == "rock" && computer == "scissors" || player == "paper" && computer == "rock" || player == "scissors" && computer == "paper"){
         playerChose.innerHTML = player;
         compChose.innerHTML = computer;
-        result.innerHTML = "Won";
+        result.innerHTML = "You won";
     }
     else{
     playerChose.innerHTML = player;
     compChose.innerHTML = computer;
-    result.innerHTML = "Lost";
+    result.innerHTML = "You Lost";
     }
 }
     
