@@ -1,3 +1,4 @@
+
 const play = playGame();
 
 function playGame(){
@@ -6,24 +7,24 @@ function playGame(){
 
     alert("Hey!Let's play Rock Paper Scissor!!");
 
-    for(i = 0; i < 5; i++){
-        let playerChoice = prompt("Choose:");
-        playerChoice = playerChoice.toLowerCase();
+    // for(i = 0; i < 5; i++){
+    //     let playerChoice = prompt("Choose:");
+    //     playerChoice = playerChoice.toLowerCase();
 
-        const computerChoice = getComputerChoice();
-        console.log("The computer choose "+ computerChoice);
+    //     const computerChoice = getComputerChoice();
+    //     console.log("The computer choose "+ computerChoice);
 
-        const result = playRound(playerChoice,computerChoice);
+    //     const result = playRound(playerChoice,computerChoice);
 
-        if(result == "Won"){
-            countWins++;
-        }
-        else if(result == "Draw"){
-            draw++;
-        }
-        console.log("You " + result + "!");
-    }
-    console.log("The final score is: " + countWins + "-" + (5 - countWins - draw) + " with " + draw + " draws");
+    //     if(result == "Won"){
+    //         countWins++;
+    //     }
+    //     else if(result == "Draw"){
+    //         draw++;
+    //     }
+    //     console.log("You " + result + "!");
+    // }
+    // console.log("The final score is: " + countWins + "-" + (5 - countWins - draw) + " with " + draw + " draws");
 }
 
 function getComputerChoice(){
@@ -47,11 +48,11 @@ function playRound(playerSelection, computerSelection){
     const computer = computerSelection;
 
     if (player == computer){
-        return "Draw";
+        console.log( "Draw");
     }
     else if (player == "rock" && computer == "scissor" || player == "paper" && computer == "rock" || player == "scissor" && computer == "paper"){
-        return "Won";
+        console.log( "Won");
     }
     else
-        return "Lost";
+        console.log( "Lost");
 }
