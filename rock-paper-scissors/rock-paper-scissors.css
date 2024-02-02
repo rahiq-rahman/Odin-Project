@@ -22,3 +22,25 @@ img{
     border-radius: 6px;
     margin: 200px auto 0px;
 }
+.play-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 15px;
+    background: cadetblue;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+}
+a:hover{
+    background:whitesmoke;
+    color: black;
+    border-color: black;
+}
