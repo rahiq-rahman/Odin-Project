@@ -17,6 +17,7 @@ function getComputerChoice(){
 function playRound(playerSelection, computerSelection){
     const player = playerSelection;
     const computer = computerSelection;
+    
     let result = document.getElementById("resultText");
     let playerChose = document.getElementById("player");
     let compChose = document.getElementById("comp");
@@ -33,9 +34,9 @@ function playRound(playerSelection, computerSelection){
         result.innerHTML = "You won";
     }
     else{
-    playerChose.innerHTML = player;
-    compChose.innerHTML = computer;
-    result.innerHTML = "You Lost";
+        playerChose.innerHTML = player;
+        compChose.innerHTML = computer;
+        result.innerHTML = "You Lost";
     }
 }
     
