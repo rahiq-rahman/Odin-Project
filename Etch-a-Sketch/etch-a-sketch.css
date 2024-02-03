@@ -1,14 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
 #container{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
 }
 .grid{
-    width :84px;
-    height :84px;
+    width :40px;
+    height :40px;
     border :3px solid black;
     background :white;
 }
-.grid:hover{
-    background-color: antiquewhite;
+a{
+    text-decoration: none;
+    color: rgb(243, 208, 94);
+    border: 1px solid rgb(206, 214, 43);
+    padding: 5px 15px;
+    background: white;
+    margin: 20px 0px;
+}
+a:hover{
+    box-shadow: 0px 0px 5px black;
 }
